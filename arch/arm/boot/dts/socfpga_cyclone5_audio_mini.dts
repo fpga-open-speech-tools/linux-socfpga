@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: GPL-2.0+
+/*
+ * Copyright (C) 2020 Audio Logic
+ */
+#include "socfpga_cyclone5_de10_nano.dtsi"
+
+/ {
+	model = "Audio Logic Audio Mini";
+
+    fe_ad1939: fe_ad1939 {
+        compatible = "dev,fe-ad1939";
+    };
+
+};
+
+&i2c0 {
+    fe_tpa613a2: fe_tpa613a2 {
+        compatible = "dev,fe-tpa613a2";
+    };
+};
