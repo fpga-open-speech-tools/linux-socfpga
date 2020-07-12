@@ -11,14 +11,16 @@
         compatible = "dev,fe-ad1939";
     };
 
-};
-
-&i2c0 {
     fe_tpa613a2: fe_tpa613a2 {
         compatible = "dev,fe-tpa613a2";
     };
+
 };
 
 &spi0 {
     status = "okay";
+};
+
+&base_fpga_region {
+	#address-cells = <2>;
 };
